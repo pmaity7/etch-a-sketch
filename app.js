@@ -5,7 +5,7 @@ const clearButton = document.getElementById('reload');
 const select = document.querySelector('select');
 let selectedColor = '';
 
-let count = 0;
+let count = 16;
 
 let sideLength = 0;
 
@@ -35,10 +35,10 @@ function createBoard() {
         const grid = document.createElement('div');
         grid.classList.add('grid-item');
         grid.id = i;
-        grid.setAttribute('style', `width: ${sideLength}px;height: ${sideLength}px; border: 1px solid black;`);
+        grid.setAttribute('style', `width: ${sideLength}px;height: ${sideLength}px; background-color: white;`);
         board.appendChild(grid);
     }
-    board.setAttribute('style', `width: ${count*sideLength}px; height: ${count*sideLength}px; grid-template-columns: repeat(${count}, 1fr); grid-template-rows: repeat(${count}, 1fr);`);
+    board.setAttribute('style', `width: ${count*sideLength}px; height: ${count*sideLength}px; grid-template-columns: repeat(${count}, 1fr); grid-template-rows: repeat(${count}, 1fr); border: 1rem solid black;`);
     const gridItem = document.getElementsByClassName('grid-item');  
     var grid = Array.from(gridItem);
     console.log(grid);

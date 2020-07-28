@@ -7,19 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Etch-A-Sketch</h1>
     <div id="user-values">
         <form id="form">
-            How many grid do you want? <input type="text" name="grid-count">
+            What grid size do you want? <input type="text" name="grid-count">
             <span><input type="submit" value="Enter"></span> <br>
             How you want your colours?
             <select name="colors" id="colors">
-                <option value="Colourful">Colurful</option>
-                <option value="B&W">Black and White</option>
+                <option value="Colourful">Colourful</option>
+                <option value="B&W">Black</option>
             </select>
         </form>
         <button id="reload">Clear grid</button>
     </div>
     <div id="board"></div>
+    <footer>
+        <p>Created by Pallavi Maity</p>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>

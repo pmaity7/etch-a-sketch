@@ -1,18 +1,53 @@
+body {
+    background-color: rgb(155, 155, 243);
+    text-align: center;
+    font-family: monospace;
+    font-weight: 800;
+    font-size: large;
+
+}
+
+h1 {
+    color: rgb(58, 9, 58);
+    text-shadow: 2px 2px 0 violet;
+}
+
 #board {
     display: grid;
     padding: 1rem;
     margin: 10px auto;
 }
 
+#form {
+    font-family: monospace;
+    font-size: 1.3rem;
+    padding: 0 10px;
+    text-align: center;
+    font-weight: 800;
+}
+
+input[type="text"], select {
+    background-color: transparent;
+    border: none;
+    font-family: monospace;
+    font-weight: 800;
+}
+
+input[type="submit"], button {
+    padding: 10px;
+    background-color: violet;
+    border: 2px solid black;
+    font-family: monospace;
+    font-weight: 800;
+    margin: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: rgb(247, 181, 247);
+}
+
 #user-values {
     width: 100%;
     text-align: center;
-}
-
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.grid-item:hover {
-    background-color: blueviolet;
 }
