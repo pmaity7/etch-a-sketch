@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="user-values">
+        <form id="form">
+            How many grid do you want? <input type="text" name="grid-count">
+            <span><input type="submit" value="Enter"></span> <br>
+            How you want your colours?
+            <select name="colors" id="colors">
+                <option value="Colourful">Colurful</option>
+                <option value="B&W">Black and White</option>
+            </select>
+        </form>
+        <button id="reload">Clear grid</button>
+    </div>
+    <div id="board"></div>
+    <script src="app.js"></script>
+</body>
+</html>
